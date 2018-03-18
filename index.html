@@ -1,21 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <!-- HTML file for Hangman Game -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-    <!-- Link to Javascript File -->
-    <link type="text/javascript" src="assets/javascript/game.js">
-
-    <!-- Link to CSS Sheet -->
-    <link type="text/css" src="assets/css/style.css">
+    <title>March Madness Hangman Game</title>
 
     <!-- Link to Meyerweb CSS Reset Sheet -->
-    <link type="text/css" src="assets/css/reset.css">
-    <title>Document</title>
-</head>
-<body>
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+
+    <!-- Link to CSS Sheet -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+    <!-- Link to Javascript File (Working) -->
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+
+    <!-- Link to Javascript File (Non Working) -->
+    <!-- <script type="text/javascript" src="assets/javascript/attempt.js"></script> -->
     
+</head>
+
+<body>
+        <img id="banner2" src="assets/images/ball.png">
+    <div>
+        <img id="banner" src="assets/images/march-mad-1.png">
+        
+        <h1>HANGMAN GAME</h1>
+    </div>
+
+    
+
+<div id="headerContainer">
+    <div id="bodyContainer">
+        <p>Press Any Key To Begin</p>
+        <div id="placeholders" class="dynamicHTML"> </div>
+        <div id="guessesRemaining" class="dynamicHTML"></div>
+        <div id="wins" class="dynamicHTML"></div>
+        <div id="losses" class="dynamicHTML"></div>
+        <div id="pressedLetters" class="dynamicHTML"></div>
+    </div>
+</div>
+
 </body>
+
 </html>
